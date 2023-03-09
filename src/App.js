@@ -6,6 +6,8 @@ import Tools from './pages/Tools';
 import Services from './pages/Services';
 import About from './pages/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SignUp from './pages/SignUp';
+import Login from './pages/Login';
 
 
 function App() {
@@ -21,11 +23,20 @@ function App() {
             <Nav.Link as={Link} to="/tools">Tools</Nav.Link>
             <Nav.Link as={Link} to="/services">Services</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/signup">SignUp</Nav.Link>
+            <Nav.Link as={Link} to="/login">Login</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Navbar>
 
       <Switch>
+      <Route path="/signup">
+          <SignUp />          
+        </Route>
+        <Route path="/login">
+          <Login />          
+        </Route>
         <Route path="/tools">
           <Tools />
         </Route>
