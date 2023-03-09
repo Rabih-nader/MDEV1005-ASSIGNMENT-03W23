@@ -2,9 +2,6 @@ import firebase from "../firebase";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-
-
-
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -51,7 +48,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button type="button" onClick={handleLogin}>
+        <button type="submit" onClick={handleLogin}>
           Login
         </button>
       </form>

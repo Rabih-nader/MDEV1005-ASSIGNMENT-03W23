@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const MyContext = createContext();
 
-function Home() {
+function Home({ user }) {
   const [count, setCount] = useState(0);
   const [inputValue, setInputValue] = useState('');
   const [textValue, setTextValue] = useState('');
@@ -30,7 +30,11 @@ function Home() {
       <Container>
         <Row>
           <Col>
-            <h1>Home Page</h1>
+            {user ? (
+              <h1>{user}</h1>              
+            ) : (
+              <p>Please log in to see your account information.</p>
+            )}
             <p>Welcome to my React Router App!</p>
             <p>You clicked {count} times</p>
             <Button onClick={handleClick} bsPrefix="btn btn-primary">Click me</Button>
