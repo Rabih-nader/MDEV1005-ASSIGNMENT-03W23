@@ -1,16 +1,24 @@
+/*A React component that implements a basic calculator.*/
+
 import React, { useState } from 'react';
 
 function Calculator() {
+  // Initialize the state for storing calculator result
+
   const [result, setResult] = useState('');
 
+  // Handles button click events and updates calculator result
   function handleClick(e) {
     setResult(result.concat(e.target.name));
   }
 
+  // Handles the clear button click event and clears calculator result
   function handleClear() {
     setResult('');
   }
 
+  //Evaluates the calculator result and updates the state
+  //@throws {Error} If an error occurs during the evaluation
   function handleCalculate() {
     try {
       setResult(eval(result).toString());
@@ -22,10 +30,6 @@ function Calculator() {
   return (
     <div className="calculator">
       <input type="text" value={result} />
-    {/* <div className="col-sm-12">
-        <input type="text" className="form-control" value={result}/>
-    </div> */}
-
 
       <div className="buttons">
         <button name="1" onClick={handleClick}>1</button>

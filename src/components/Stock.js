@@ -1,9 +1,13 @@
+/*A React component that fetches and displays interday IBM stock updates in interval of 05 minute*/
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Stock = () => {
+  // Initialize the state for storing stock updates
   const [data, setData] = useState([]);
 
+  // Fetches stock update on component mount and updates the state
   useEffect(() => {
     axios
       .get(

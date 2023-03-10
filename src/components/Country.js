@@ -1,10 +1,15 @@
+/*A React component that fetches and displays country information*/
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Card } from "react-bootstrap";
 
 const Country = () => {
+
+  // Initialize the state for storing country information
   const [country, setCountry] = useState([]);
 
+  // Fetches country information on component mount and updates the state
   useEffect(() => {
     axios
       .get("https://restcountries.com/v2/capital/ottawa")

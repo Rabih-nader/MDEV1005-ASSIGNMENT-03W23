@@ -1,9 +1,11 @@
+/*A React component that implements user signup functionality*/
+
 import firebase from "../firebase";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-
 const SignUp = () => {
+  // Initialize the state for storing user email, password and error message
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
@@ -28,29 +30,29 @@ const SignUp = () => {
   };
 
   return (
-        <div>
+    <div>
       <h1>Sign Up</h1>
       <hr></hr>
       <form onSubmit={handleSignUp}>
-<div className="mb-3 row">
-    <label for="staticEmail" className="col-sm-2 col-form-label">Email</label>
-    <div className="col-sm-10">
-      <input type="email" className="form-control" id="email"value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com"/>
-    </div>
-  </div>
+        <div className="mb-3 row">
+          <label for="staticEmail" className="col-sm-2 col-form-label">Email</label>
+          <div className="col-sm-10">
+            <input type="email" className="form-control" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com" />
+          </div>
+        </div>
 
-<div className="mb-3 row">
-    <label for="inputPassword" className="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" className="form-control"  id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        <div className="mb-3 row">
+          <label for="inputPassword" className="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" className="form-control" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="submit" class="btn btn-success">Sign Up</button>
+        </div>
+      </form>
     </div>
-  </div>
-  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-<button type="submit" class="btn btn-success">Sign Up</button>
-</div>
-  </form>
-</div>
-);
+  );
 };
 export default SignUp;
 

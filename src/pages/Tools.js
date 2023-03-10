@@ -11,7 +11,7 @@ function Tools() {
 
       <div className="row">
         <div className="col-md-6">
-        <Checklist />
+          <Checklist />
         </div>
         <div className="col-md-6">
           <Calculator />

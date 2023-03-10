@@ -1,10 +1,14 @@
+/*A React component that fetches and displays latest news*/
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Card, Button } from 'react-bootstrap';
 
 const Newsfeed = () => {
+  // Initialize the state for storing news
   const [articles, setArticles] = useState([]);
 
+  // Fetches news on component mount and updates the state
   useEffect(() => {
     axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=3b6fe86728144dc8a4c1d96c09f5e946')
       .then(response => {

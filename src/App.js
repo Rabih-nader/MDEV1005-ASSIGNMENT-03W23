@@ -8,9 +8,6 @@ import Api from './pages/Api';
 import Account from './pages/Account';
 import About from './pages/Report';
 
-import Login from './components/Login';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -22,9 +19,9 @@ function App() {
   }
 
   // handle user logout
-  const handleLogout = () => {
-    setUser(null);
-  }
+  // const handleLogout = () => {
+  //   setUser(null);
+  // }
 
   return (
     <BrowserRouter>
@@ -37,10 +34,10 @@ function App() {
             <Nav.Link as={Link} to="/tools">Tools</Nav.Link>
             <Nav.Link as={Link} to="/api">API</Nav.Link>
             <Nav.Link as={Link} to="/report">Report</Nav.Link>
-            
+
             {user ? (
               <>
-                <Nav.Link as={Link} to="/" onClick={handleLogout}>Logout</Nav.Link>
+                {/* <Nav.Link as={Link} to="/" onClick={handleLogout}>Logout</Nav.Link> */}
                 <Nav.Link disabled>{user.email}</Nav.Link>
               </>
             ) : (

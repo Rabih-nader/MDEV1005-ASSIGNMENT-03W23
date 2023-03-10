@@ -9,21 +9,21 @@ const Api = () => {
     <div className='container'>
       <h1>API</h1>
       <hr></hr>
-    <div className="row">
-    <div className='col-md-5'>
-        <Newsfeed />
+      <div className="row">
+        <div className='col-md-5'>
+          <Newsfeed />
         </div>
         <div className='col-md-5'>
-        <Stock />
+          <Stock />
         </div>
-        
+
         <div className='col-md-2'>
-        <Country />
+          <Country />
         </div>
+      </div>
     </div>
-    </div>
-      
+
   );
 };
 
-export default Api  ;
+export default Api;

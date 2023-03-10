@@ -10,14 +10,14 @@ function Tools() {
       <hr></hr>
 
       <div className="row">
-      <div className="col-md-5">
-        <SignUp />
+        <div className="col-md-5">
+          <SignUp />
         </div>
         <div className="col-md-2"></div>
         <div className="col-md-5">
-        <Login />
+          <Login />
         </div>
-    </div>
+      </div>
     </div>
   );
 }
