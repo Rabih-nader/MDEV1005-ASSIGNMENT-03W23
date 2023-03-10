@@ -30,8 +30,8 @@ const Login = () => {
       });
   };
 
-  return (
-    <div className="container">
+  return (    
+        <div>
       <h1>Login</h1>
       <hr></hr>
       {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
@@ -51,10 +51,9 @@ const Login = () => {
       <input type="password" className="form-control"  id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
     </div>
   </div>
-
-
-
-        <button type="button" className="btn btn-primary" onClick={handleLogin}>Login</button>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+<button type="button" class="btn btn-primary" onClick={handleLogin}>Login</button>
+</div>
       </form>
     </div>
   );

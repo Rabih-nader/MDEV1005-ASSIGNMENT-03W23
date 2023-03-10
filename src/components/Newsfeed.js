@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { Card, Button } from 'react-bootstrap';
 
 const Newsfeed = () => {
   const [articles, setArticles] = useState([]);
@@ -16,20 +16,20 @@ const Newsfeed = () => {
   }, []);
 
   return (
-   
-    <div className="col-7">
+    <div>
       <h4>Newsfeed</h4>
-      <ul>
-        {articles.map(article => (
-          <li key={article.url}>
-            <a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}</a>
-            <p>{article.description}</p>
-          </li>
-        ))}
-      </ul>
+      {articles.map(article => (
+        <Card key={article.url} className="mb-3">
+          <Card.Img variant="top" src={article.urlToImage} />
+          <Card.Body>
+            <Card.Title>{article.title}</Card.Title>
+            <Card.Text>{article.description}</Card.Text>
+            <Button variant="primary" href={article.url} target="_blank" rel="noopener noreferrer">Read More</Button>
+          </Card.Body>
+        </Card>
+      ))}
     </div>
   );
-  
 };
 
 export default Newsfeed;

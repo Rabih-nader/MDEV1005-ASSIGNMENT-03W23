@@ -14,6 +14,16 @@ function Report() {
         </Col>
       </Row>
 
+      <div className="card mb-4">
+          <div className="card-body">
+            <h5 className="card-title">Service 2</h5>
+            <p className="card-text">Donec at felis a mi imperdiet cursus. Donec porttitor, magna et luctus sagittis, turpis massa bibendum erat, at ultricies turpis quam sit amet massa.</p>
+          </div>
+          <div className="card-footer">
+            <small className="text-muted">Last updated 5 mins ago</small>
+          </div>
+        </div>
+
       <Row className="mt-3">
         <Col sm={12} md={4}>
           <Card>

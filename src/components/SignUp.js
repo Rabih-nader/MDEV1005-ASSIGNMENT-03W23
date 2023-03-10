@@ -28,7 +28,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="container">
+        <div>
       <h1>Sign Up</h1>
       <hr></hr>
       <form onSubmit={handleSignUp}>
@@ -45,7 +45,9 @@ const SignUp = () => {
       <input type="password" className="form-control"  id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
     </div>
   </div>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
 <button type="submit" class="btn btn-success">Sign Up</button>
+</div>
   </form>
 </div>
 );
