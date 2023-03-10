@@ -2,6 +2,9 @@ import firebase from "../firebase";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
+
+
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,29 +31,30 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
+    <div className="container">
+      <h1>Login</h1>
+      <hr></hr>
       {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
       <form onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
+      <div className="mb-3 row">
+    <label className="col-sm-2 col-form-label">Email</label>
+    <div className="col-sm-10">
+      <input type="email" className="form-control" id="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com"/>
+    </div>
+  </div>
 
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+<div className="mb-3 row">
+    <label className="col-sm-2 col-form-label">Password</label>
+    <div className="col-sm-10">
+      <input type="password" className="form-control"  id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+    </div>
+  </div>
 
-        <button type="submit" onClick={handleLogin}>
-          Login
-        </button>
+
+
+        <button type="button" className="btn btn-primary" onClick={handleLogin}>Login</button>
       </form>
     </div>
   );

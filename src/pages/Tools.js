@@ -1,24 +1,22 @@
 import React from 'react';
-import Notes from '../components/Notes';
-import Counter from '../components/Counter';
-import CharacterCounter from '../components/CharacterCounter';
+import Calculator from '../components/Calculator';
 import Checklist from '../components/Checklist';
+
 
 function Tools() {
   return (
     <div className="container">
       <h1>Tools Page</h1>
+      <hr></hr>
 
       <div className="row">
         <div className="col-md-6">
-          <Counter />
+        <Checklist />
         </div>
         <div className="col-md-6">
-          <CharacterCounter />
+          <Calculator />
         </div>
       </div>
-      <Notes />
-      <Checklist />
     </div>
   );
 }

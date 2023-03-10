@@ -5,7 +5,8 @@ import Home from './Home';
 function Services() {
   return (
     <div className="container">
-      <h1 className="my-4">Services Page</h1>
+      <h1 className="my-4">Services</h1>
+      <hr></hr>
       <p className="lead">Welcome to Services</p>
       <div className="card-deck">
         <div className="card mb-4">

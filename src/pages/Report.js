@@ -1,13 +1,14 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 
-function About() {
+function Report() {
   return (
     <Container>
       <Row>
         <Col>
-          <h1>About Page</h1>
-          <p>Welcome to About</p>
+          <h1>Report</h1>
+          <hr></hr>
+          <p>Welcome to Report</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, mi ac rhoncus bibendum, nunc velit pharetra mi, vel tincidunt odio quam eget ipsum. Proin finibus suscipit lectus, eu tincidunt ipsum. Ut at elementum massa. Integer et convallis enim. Donec tincidunt porta arcu ac blandit. Etiam vel bibendum tellus. Nunc hendrerit, velit id ullamcorper interdum, velit massa lacinia magna, ut fringilla orci sapien eu felis.</p>
           <p>Mauris non massa aliquam, molestie turpis vel, lacinia quam. Fusce euismod purus nisl, eget aliquam velit cursus in. Nam gravida sapien id risus tristique, id pellentesque tellus luctus. Nulla eu volutpat elit, non rhoncus elit. Sed sit amet magna et mauris auctor dictum a sed odio. Suspendisse at tortor ut lorem pellentesque laoreet eu ac nunc.</p>
         </Col>
@@ -63,4 +64,4 @@ function About() {
   );
 }
 
-export default About;
+export default Report;
