@@ -33,7 +33,7 @@ const Login = () => {
 
   return (
     <div>
-      <h1>Login</h1>
+      <h3>Login</h3>
       <hr></hr>
       {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
       <form onSubmit={(e) => e.preventDefault()}>

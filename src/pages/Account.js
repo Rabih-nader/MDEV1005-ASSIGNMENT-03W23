@@ -6,7 +6,7 @@ import Login from '../components/Login';
 function Tools() {
   return (
     <div className="container">
-      <h1>User Account</h1>
+      <h1>Account</h1>
       <hr></hr>
 
       <div className="row">

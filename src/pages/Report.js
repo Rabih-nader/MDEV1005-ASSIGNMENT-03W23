@@ -1,77 +1,71 @@
-import React from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap';
-
-function Report() {
+const Report = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>Report</h1>
-          <hr></hr>
-          <p>Welcome to Report</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, mi ac rhoncus bibendum, nunc velit pharetra mi, vel tincidunt odio quam eget ipsum. Proin finibus suscipit lectus, eu tincidunt ipsum. Ut at elementum massa. Integer et convallis enim. Donec tincidunt porta arcu ac blandit. Etiam vel bibendum tellus. Nunc hendrerit, velit id ullamcorper interdum, velit massa lacinia magna, ut fringilla orci sapien eu felis.</p>
-          <p>Mauris non massa aliquam, molestie turpis vel, lacinia quam. Fusce euismod purus nisl, eget aliquam velit cursus in. Nam gravida sapien id risus tristique, id pellentesque tellus luctus. Nulla eu volutpat elit, non rhoncus elit. Sed sit amet magna et mauris auctor dictum a sed odio. Suspendisse at tortor ut lorem pellentesque laoreet eu ac nunc.</p>
-        </Col>
-      </Row>
+    <div className="container">
+     <h1>Report</h1>
+      <hr></hr>
+<h6>The following report for the Assignment-03 is presented by group ReWebDev, formed by MAHFUZ AFTAB - #200499643 and RABIH NADER - #200506633</h6>
+        
 
-      <div className="card mb-4">
-          <div className="card-body">
-            <h5 className="card-title">Service 2</h5>
-            <p className="card-text">Donec at felis a mi imperdiet cursus. Donec porttitor, magna et luctus sagittis, turpis massa bibendum erat, at ultricies turpis quam sit amet massa.</p>
-          </div>
-          <div className="card-footer">
-            <small className="text-muted">Last updated 5 mins ago</small>
-          </div>
+        <div className="col">
+          <h4 className="fs-2">Research</h4>
+          <p>ReWebDev gone through an extensive research on avialble online resources about react react components, hooks and best coding practice to implement them accordingly.</p>
         </div>
 
-      <Row className="mt-3">
-        <Col sm={12} md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" />
-            <Card.Body>
-              <Card.Title>Card 1</Card.Title>
-              <Card.Text>
-                This is the content for card 1.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm={12} md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" />
-            <Card.Body>
-              <Card.Title>Card 2</Card.Title>
-              <Card.Text>
-                This is the content for card 2.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm={12} md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" />
-            <Card.Body>
-              <Card.Title>Card 3</Card.Title>
-              <Card.Text>
-                This is the content for card 3.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+        <div className="col">
+          <h4 className="fs-2">Functional Components</h4>
+          <ul>
+            <li>Newsfeed API</li>
+            <li>Stock API</li>
+            <li>Country API</li>
+            <li>CheckList Tool</li>
+            <li>Calculator Tool</li>
+            <li>Sign Up</li>
+            <li>Login</li>
+          </ul>
+        </div>
 
-      <style jsx>{`
-        @media screen and (max-width: 768px) {
-          .card-title {
-            font-size: 1.5rem;
-          }
-          .card-text {
-            font-size: 1rem;
-          }
-        }
-      `}</style>
-    </Container>
-  );
+        <div className="col">
+          <h4 className="fs-2">Color Pallete</h4>
+          <p>Following the recent trend of minimalistic website with sleeck and clean UI, ReWebDev used primarily 2 colors - yellow and white.</p>
+        </div>
+
+        <div className="col">
+          <h4 className="fs-2">Getsalt Principles</h4>
+          <ul>
+            <li>Continuation</li>
+            <li>Proximity</li>
+            <li>Similarity</li>
+          </ul>
+        </div>
+
+      <section className="row flex-column mt-4">
+        <div className="col">
+          <h2 className="fs-2">Hooks</h2>
+          <ol>
+            <li>useEffect</li>
+            <li>useHistory</li>
+            <li>useState</li>
+          </ol>
+        </div>
+      </section>
+
+      
+        <div className="col">
+          <h4 className="fs-2">APIs</h4>
+          <p>The 03 different APIs are as follows, </p>
+          <ol>
+            <li>News - https://newsapi.org</li>
+            <li>Stock Updates - https://www.alphavantage.co</li>
+            <li>Country Details - https://restcountries.com</li>
+          </ol>
+        </div>
+
+        <div className="col">
+          <h4 className="fs-2">Participation Report</h4>
+          <p>Both the group members contributed equally for the development of the Assignment 03 website starting from project planning, web UI design fixing to solving problems during development. RABIH NADER worked on User Authentication, Firebase Setup, Checklist Tools and MAHFUZ AFTAB worked on Calculator Tool, News Feed, IBM Stock Updates, Country Details API.</p>
+        </div>
+    </div>
+  )
 }
 
-export default Report;
+export default Report

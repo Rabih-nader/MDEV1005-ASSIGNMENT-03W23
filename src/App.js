@@ -17,12 +17,7 @@ function App() {
   const handleLogin = (user) => {
     setUser(user);
   }
-
-  // handle user logout
-  // const handleLogout = () => {
-  //   setUser(null);
-  // }
-
+  
   return (
     <BrowserRouter>
       <Navbar bg="warning" expand="lg" style={{ paddingLeft: '30px', paddingRight: '10px' }}>
